@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập JS buổi 13</title>
+    <link
+      rel="icon"
+      href="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/calculator-256.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Bài tập 1 -->
+    <section id="ex1" class="container">
+      <header class="heading">
+        <h2>Tính tiền lương nhân viên</h2>
+        <p>
+          Viết chương trình tính tiền lương nhân viên. <br />
+          Lương 1 ngày: 100.000 <br />
+          Cho người dùng nhập vào số ngày làm <br />
+          Công thức tính lương: Lương 1 ngày * số ngày làm.
+        </p>
+      </header>
+      <main class="exam">
+        <h3>Lương 1 ngày: 100.000 vnđ</h3>
+        <p>Nhập vào số ngày công:</p>
+        <div>
+          <input
+            id="totalWorkDay"
+            type="number"
+            value=""
+            placeholder="số ngày công"
+          />
+          <button onclick="exam1()">Tính tiền</button>
+        </div>
+        <h4 id="totalSalary">Chưa nhập ngày công nên chưa biết lương.</h4>
+      </main>
+    </section>
+    <!-- Bài tập 2 -->
+    <section id="ex2" class="container">
+      <header class="heading">
+        <h2>Tính giá trị trung bình</h2>
+        <p>
+          Viết chương trình nhập vào 5 số thực. <br />
+          Tính giá trị trung bình của 5 số này và xuất ra màn hình
+        </p>
+      </header>
+      <main class="exam">
+        <h3>Nhập vào đủ 5 số</h3>
+        <ul>
+          <li>
+            <span>Nhập số thứ nhất </span>
+            <input id="num1" type="number" value="" placeholder=" ... " />
+          </li>
+          <li>
+            <span>Nhập số thứ hai </span>
+            <input id="num2" type="number" value="" placeholder=" ..." />
+          </li>
+          <li>
+            <span>Nhập số thứ ba </span>
+            <input id="num3" type="number" value="" placeholder=" ..." />
+          </li>
+          <li>
+            <span>Nhập số thứ tư </span>
+            <input id="num4" type="number" value="" placeholder=" ..." />
+          </li>
+          <li>
+            <span>Nhập số thứ năm </span>
+            <input id="num5" type="number" value="" placeholder=" ..." />
+          </li>
+          <li>
+            <h4>Giá trị trung bình</h4>
+            <input
+              id="average5Numbers"
+              type="text"
+              disabled
+              value=""
+              placeholder="-------"
+            />
+          </li>
+        </ul>
+        <button onclick="exam2()">TÍNH</button>
+      </main>
+    </section>
+    <!-- Bài tập 3 -->
+    <section id="ex3" class="container">
+      <header class="heading">
+        <h2>Quy đổi tiền</h2>
+        <p>
+          Giá USD hiện nay đang là 23.500 VNĐ <br />
+          Viết chương trình quy đổi từ USD sang VND. <br />
+          Cho người dùng nhập vào số tiền USD. <br />
+          Tính và xuất ra số tiền sau quy đổi VNĐ.
+        </p>
+      </header>
+      <main class="exam">
+        <h3>Tỷ giá: 1 USD = 23.500 VNĐ</h3>
+        <p>Nhập vào số USD đang có:</p>
+        <div>
+          <input id="usdCount" type="number" value="" placeholder="- - -" />
+          <span>$</span>
+          <button onclick="exam3()">Quy đổi</button>
+        </div>
+        <h4 id="vndCount"></h4>
+      </main>
+    </section>
+    <!-- Bài tập 4 -->
+    <section id="ex4" class="container">
+      <header class="heading">
+        <h2>Tính diện tích và chu vi hình chữ nhật</h2>
+        <p>
+          Viết chương trình nhập vào 2 chiều dài và chiều rộng của <br />
+          Hình chữ nhật. <br />Tính và xuất ra diện tích, chu vi của HCN đó.
+        </p>
+      </header>
+      <main class="exam">
+        <h3>Diện tích và chu vi của HCN</h3>
+        <div>
+          <p>Nhập vào chiều dài:</p>
+          <input id="width" type="number" value="" placeholder="- - -" />
+          <p>Nhập vào chiều rộng:</p>
+          <input id="height" type="number" value="" placeholder="- - -" />
+          <button onclick="exam4()">Tính kết quả</button>
+        </div>
+        <h4 id="area"></h4>
+        <h4 id="perimeter"></h4>
+      </main>
+    </section>
+    <!-- Bài tập 5 -->
+    <section id="ex5" class="container">
+      <header class="heading">
+        <h2>Tính tổng 2 ký số số có 2 chữ số</h2>
+        <p>
+          Viết chương trình nhập vào 1 số có 2 chữ số (VD: 12, 44, 83 ...)
+          <br />
+          Tính tổng 2 ký số của số vừa nhập. <br />
+          Ví dụ: <br />
+          12 => Tổng là 1 + 2 = 3
+        </p>
+      </header>
+      <main class="exam">
+        <h3>Nhập vào số có 2 chữ số</h3>
+        <div>
+          <input id="number" type="number" value="" placeholder=" nhập số và nhấn nút" />
+          <button onclick="exam5()">Tính tổng 2 ký số</button>
+        </div>
+        <h4 id="sumNumber"></h4>
+      </main>
+    </section>
+
+    <!-- Script -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
